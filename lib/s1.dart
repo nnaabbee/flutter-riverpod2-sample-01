@@ -1,11 +1,15 @@
+import 'package:flutter/cupertino.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 's1.g.dart';
 
-@riverpod
+@Riverpod(keepAlive: true)
 class S1Notifier extends _$S1Notifier {
 
   @override
   int build() {
+    ref.onDispose(() {
+      debugPrint('S1Notifier onDispose');
+    });
     return 0;
   }
 

@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_2_plac/my_widget.dart';
 
+import 'my_widget_1.dart';
+import 'my_widget_3.dart';
+
 void main() {
   // アプリの宣言
   const app = MyApp();
@@ -20,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       home: Scaffold(
         body: Center(
-          child: MyWidget(),
+          child: MyWidget3(),
         ),
       ),
     );
