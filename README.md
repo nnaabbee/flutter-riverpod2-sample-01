@@ -11,3 +11,7 @@ riverpod ver2の勉強用プロジェクトです
 
 - makefileのsetupを実行してください
   - `make setup`とターミナルで実行しても大丈夫だと思います
+- riverpod
+  - `make river-watch`で変更を監視し、適宜g.dartファイルを生成します
+    - control + c で中断
+  - `make river-build`でg.dartファイルを生成します

@@ -1,4 +1,4 @@
-.PHONY: setup show-device
+.PHONY: setup show-device river-watch river-build
 
 setup:
 	fvm use 3.13.7
@@ -7,3 +7,9 @@ setup:
 
 show-device:
 	fvm flutter devices
+
+river-watch:
+	fvm flutter pub run build_runner watch
+
+river-build:
+	fvm flutter pub run build_runner build --delete-conflicting-outputs
